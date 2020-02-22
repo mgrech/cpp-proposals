@@ -53,17 +53,6 @@ int const n = n;
 // 'n' is now const from this point on
 ```
 
-Some programmers prefer to keep top-level const out of function declarations, because it does not communicate anything to the caller. The following would be valid under this proposal:
-
-```cpp
-void foo(int i)
-{
-	int const i = i; // let me make my own 'i' that is const
-
-	// ...
-}
-```
-
 - Unwrapping: When working with values like std::optional, it can be useful to give the optional and the unwrapped value the same name:
 
 ```cpp
