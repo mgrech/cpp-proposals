@@ -79,11 +79,11 @@ void onUserInput(std::string const& input)
 }
 ```
 
-The last two examples show an interesting property of this feature: It allows the programmer to atomically replace a variable binding with another, in the sense that the old value ceases to be accessible and the name refers to the new value from this point onwards. Unlike nested shadowing, the old variable never becomes accessible again, reduding the number of things the programmer needs to mentally keep track of.
+The last two examples show an interesting property of this feature: It allows the programmer to atomically replace a variable binding with another, in the sense that the old value ceases to be accessible and the name refers to the new value from this point onwards. Unlike nested shadowing, the old variable never becomes accessible again, reducing the number of things the programmer needs to mentally keep track of.
 
 Often programmers need to perform some kind of unwrapping or transformation on a value that changes its type, but because C++ does not permit re-using variable names within the same scope, they need to choose two different but usually very similar names. It can easily happen then that the wrong variable is used on accident, resulting in difficult to find bugs and/or security issues. This proposal allows this entire class of errors to be eliminated.
 
 ## Existing Practise
-The Rust programming language already [allows][1] this behavior.
+The Rust programming language already [allows][1] this behaviour.
 
 [1]: https://doc.rust-lang.org/rust-by-example/variable_bindings/scope.html
