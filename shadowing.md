@@ -1,7 +1,9 @@
 # Explicitly Shadowing and Undeclaring Variables
 
 Author: Markus Grech &lt;me at mgrech.dev&gt;
+
 Target: C++23
+
 Document Number: P?????
 
 ## Abstract
